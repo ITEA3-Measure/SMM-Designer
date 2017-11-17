@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module id="SMM" class="measure.smm.impl.SMMModule" binaryversion="3.4.1" version="0.4.05" schema-level="2" uid="9a3700ca-43b7-4bf9-b9fc-b2d7e8595fbc" author="Modeliosoft" image="" url="">
+    <ClassPath>
+        <PathEntry path="lib/smm-0.4.05.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/ecore-2.3.2.jar"/>
+        <PathEntry path="lib/SMMMeasureApi-0.6.00.jar"/>
+        <PathEntry path="lib/smm.emf-0.2.04.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+    </ClassPath>
+    <Profiles>
+        <Profile uid="a29ffa5a-275c-4051-9f6a-a05f9e9a2415" id="Core">
+            <Stereotype name="CategoryMeasure" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.CategoryMeasure.label" uid="5dcd7b3d-98bc-4f95-b7c2-ff08245f3643">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="CategoryRelationship" metaclass="Dependency" owner-stereotype="mref#'' {7e0e48e6-508c-4f53-955b-e3358a42a960} Stereotype" is-hidden="false" label="%stereotype.CategoryRelationship.label" uid="e8342178-c884-4ffe-a456-b652f6b9e027">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="MeasureCategory" metaclass="Package" owner-stereotype="mref#'' {4236f90b-2dfc-4c4d-a86c-f4453d0626f8} Stereotype" is-hidden="false" label="%stereotype.MeasureCategory.label" uid="4201139d-f5e2-40d1-82ca-c31b0f09398c">
+                <Icon path="res/icon/gui/category_small.png"/>
+                <Image path="res/icon/gui/category_big.png"/>
+            </Stereotype>
+            <Stereotype name="MeasureLibrary" metaclass="Package" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.MeasureLibrary.label" uid="64137491-8a7b-449b-a6d3-0131f6a3ac9e">
+                <Icon path="res/icon/gui/library_small.png"/>
+                <Image path="res/icon/gui/library_big.png"/>
+            </Stereotype>
+            <Stereotype name="SmmElement" metaclass="ModelElement" owner-stereotype="" is-hidden="false" label="%stereotype.SmmElement.label" uid="6a275d02-c425-4d24-a622-0b0644fdfd7b">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="Extensions_attribute_tag" uid="1f515f56-b1ef-43ee-9b2a-8c16ee9b85ed" label="%tagtype.Extensions_attribute_tag.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                    <TagType name="Extensions_attribute_value" uid="545368fe-40f3-4d8a-8dcc-6252fec312e3" label="%tagtype.Extensions_attribute_value.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                    <TagType name="shortDescription" uid="ae2855f5-6563-4269-afaa-3588686c0ed4" label="%tagtype.shortDescription.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="description" uid="c9b4c4de-cc87-45b1-9749-3247a70c0aa4" label="%tagtype.description.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Extensions_annotation_text" uid="d133acfd-22ee-4cda-a1ac-0e7d0408ce28" label="%tagtype.Extensions_annotation_text.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="SmmImplementation" metaclass="Class" owner-stereotype="" is-hidden="false" label="%stereotype.SmmImplementation.label" uid="1dbf8059-31b2-4cbb-b75d-13f2ce4d034a">
+                <Icon path="res/icon/gui/folder.png"/>
+                <Image path=""/>
+                <NoteTypes>
+                    <NoteType name="dependency" label="%notetype.dependency.label" is-hidden="false" uid="d16d3395-96cf-499d-b26b-e95a56c81639" mime-type="text/plain"/>
+                    <NoteType name="repository" label="%notetype.repository.label" is-hidden="false" uid="4000ad36-f92f-4bf9-82b5-cb6967a38322" mime-type="text/plain"/>
+                </NoteTypes>
+            </Stereotype>
+            <Stereotype name="SmmModel" metaclass="Package" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.SmmModel.label" uid="8879a4de-a56f-4d48-8239-5e8081d8e4bc">
+                <Icon path="res/icon/gui/model_small.png"/>
+                <Image path="res/icon/gui/model_big.png"/>
+            </Stereotype>
+            <Stereotype name="SmmRelationship" metaclass="Dependency" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.SmmRelationship.label" uid="7e0e48e6-508c-4f53-955b-e3358a42a960">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="afb98696-b70c-4a50-9f86-ebd7236362ae" id="Observations">
+            <Stereotype name="Observation" metaclass="Package" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.Observation.label" uid="b4fc642a-e21b-4ef1-8bb8-5a23153ffcce">
+                <Icon path="res/icon/gui/observation_small.png"/>
+                <Image path="res/icon/gui/observation_big.png"/>
+                <TagTypes>
+                    <TagType name="whenObserved" uid="7b382408-856c-425f-afbf-f5bca72582f6" label="%tagtype.whenObserved.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="tool" uid="f51f2386-1afe-4b3e-a237-bdef06a26da1" label="%tagtype.tool.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="observer" uid="a5813278-79b6-4c1b-a4d6-60d91beb8eba" label="%tagtype.observer.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="observationScope" uid="b0829dd8-3084-409b-948b-2f68e328ebe0" label="%tagtype.observationScope.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                    <TagType name="argument_values" uid="185dff65-8316-4890-9db4-abdfa7ea72e2" label="%tagtype.argument_values.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                    <TagType name="argument_types" uid="c06ebaf2-4b3c-4036-89d5-23e2061c27d9" label="%tagtype.argument_types.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="ObservedMeasure" metaclass="Package" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.ObservedMeasure.label" uid="edb57b3a-82f0-49c7-aa7f-af007b8c2077">
+                <Icon path="res/icon/gui/observed_small.png"/>
+                <Image path="res/icon/gui/observed_big.png"/>
+                <TagTypes>
+                    <TagType name="argument_types" uid="4e131392-7634-4672-abee-eb8b1c5fe2a1" label="%tagtype.argument_types.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                    <TagType name="argument_values" uid="8ad9deaa-42ad-44e0-8b4e-1ace3ea1d262" label="%tagtype.argument_values.label" parameter-card="*" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="ObservedMeasurement" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.ObservedMeasurement.label" uid="df5ffb62-1f46-4857-b128-fc705e486504">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="ObservedMeasureLink" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.ObservedMeasureLink.label" uid="935d7c23-791d-4f3d-8f58-a580e7db0be4">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="RequestedMeasureLink" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.RequestedMeasureLink.label" uid="bce86ddd-d431-47e1-b7a2-60a22a69510a">
+                <Icon path="res/icon/gui/dependency.png"/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="013f9fbb-aaa6-48c3-9666-67829d3863e8" id="Measures">
+            <Stereotype name="AbstractMeasureElement" metaclass="ModelElement" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.AbstractMeasureElement.label" uid="4236f90b-2dfc-4c4d-a86c-f4453d0626f8">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Characteristic" metaclass="Class" owner-stereotype="mref#'' {4236f90b-2dfc-4c4d-a86c-f4453d0626f8} Stereotype" is-hidden="false" label="%stereotype.Characteristic.label" uid="4424b46b-5fe7-4318-8d94-7bf5fa913d81">
+                <Icon path="res/icon/gui/characteristic_small.png"/>
+                <Image path="res/icon/gui/characteristic_big.png"/>
+            </Stereotype>
+            <Stereotype name="DimensionalMeasure" metaclass="Class" owner-stereotype="mref#'' {04ef7c1d-3cd8-4cd0-adc6-5d5bdaccedfa} Stereotype" is-hidden="false" label="%stereotype.DimensionalMeasure.label" uid="5acfe476-3305-4bff-a515-55196d2402e8">
+                <Icon path="res/icon/gui/measure_small.png"/>
+                <Image path="res/icon/gui/measure_big.png"/>
+                <TagTypes>
+                    <TagType name="formula" uid="d307e9bb-f370-43e9-b8c8-5229ba61644e" label="%tagtype.formula.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="EquivalentMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.EquivalentMeasureRelationship.label" uid="6e0838c6-4fb3-4515-a1bf-8784cf41d6f1">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="Mapping_language" uid="6bad330e-328c-469a-ad8e-6e707f846ac9" label="%tagtype.Mapping_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Mapping_body" uid="c38bb4d5-17b1-4bbe-b714-5a2d9a5027d8" label="%tagtype.Mapping_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="GradeInterval" metaclass="Class" owner-stereotype="mref#'' {696e55f6-a990-4dfc-ac25-49e8387197a1} Stereotype" is-hidden="false" label="%stereotype.GradeInterval.label" uid="12e38c28-547b-4dbd-8803-9f9d827b17a4">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="GradeMeasure" metaclass="Class" owner-stereotype="mref#'' {04ef7c1d-3cd8-4cd0-adc6-5d5bdaccedfa} Stereotype" is-hidden="false" label="%stereotype.GradeMeasure.label" uid="47e26eb2-a19b-4e1b-9d87-7f39178a583a">
+                <Icon path="res/icon/gui/grande_small.png"/>
+                <Image path="res/icon/gui/grade_big.png"/>
+            </Stereotype>
+            <Stereotype name="GradeMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.GradeMeasureRelationship.label" uid="052b84b2-f7d7-4e46-8ec8-b9a881e201f8">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Interval" metaclass="Class" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.Interval.label" uid="696e55f6-a990-4dfc-ac25-49e8387197a1">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="maximumOpen" uid="51c6e63e-d157-4372-8876-7877baad717c" label="%tagtype.maximumOpen.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="minimumOpen" uid="6a9fcb80-d0f9-42a6-8ab5-01f6253bff6a" label="%tagtype.minimumOpen.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="maximum" uid="bec4aaba-0843-4b4c-886f-a17fd707283d" label="%tagtype.maximum.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="minimum" uid="4ba048db-1403-4ab2-b9a8-78057138b977" label="%tagtype.minimum.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="Measure" metaclass="Class" owner-stereotype="mref#'' {4236f90b-2dfc-4c4d-a86c-f4453d0626f8} Stereotype" is-hidden="false" label="%stereotype.Measure.label" uid="04ef7c1d-3cd8-4cd0-adc6-5d5bdaccedfa">
+                <Icon path="res/icon/gui/measure_small.png"/>
+                <Image path="res/icon/gui/measure_big.png"/>
+                <TagTypes>
+                    <TagType name="Visible" uid="a163492c-af18-4720-a72b-06dab575a0e6" label="%tagtype.Visible.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Scale" uid="e751db61-2837-459c-9d1d-1d66923e8dbd" label="%tagtype.Scale.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Source" uid="ab3f3567-8443-41f4-9efc-e8057fb6e797" label="%tagtype.Source.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Scope_name" uid="18749ffb-7ae6-4e8f-8d9b-c680a4c8d756" label="%tagtype.Scope_name.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Scope_description" uid="5b73e21e-42c3-44ac-856e-2c0066dd6c38" label="%tagtype.Scope_description.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Custom_scale" uid="7e55e47e-bfa9-4f1f-b01e-ec367bae975e" label="%tagtype.Custom_scale.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="measureLabelFormat" uid="e40913d2-9d81-46e2-bc6f-cc8d40740408" label="%tagtype.measureLabelFormat.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="measurementLabelFormat" uid="5869680c-a243-41bd-bda2-d9e25ac96c4e" label="%tagtype.measurementLabelFormat.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="defaultQuery_body" uid="759a5a19-cf05-41b5-bb0c-c3c3b2342317" label="%tagtype.defaultQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="defaultQuery_language" uid="e196c506-6448-4087-ac48-2e459632ea49" label="%tagtype.defaultQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="MeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {7e0e48e6-508c-4f53-955b-e3358a42a960} Stereotype" is-hidden="false" label="%stereotype.MeasureRelationship.label" uid="79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="influence" uid="d082d777-77f8-41ba-9b21-7f34c44ef578" label="%tagtype.influence.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="measurantQuery_body" uid="01a926c6-bcd8-45fd-9bce-2fc6db71201a" label="%tagtype.measurantQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="measurantQuery_language" uid="d4d51377-4d25-48c0-b013-dc843192d9d1" label="%tagtype.measurantQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="OCLOperation" metaclass="Class" owner-stereotype="mref#'' {4236f90b-2dfc-4c4d-a86c-f4453d0626f8} Stereotype" is-hidden="false" label="%stereotype.OCLOperation.label" uid="5d1cd4f3-1d9c-4e89-9c99-5f9c150ebb5a">
+                <Icon path="res/icon/gui/ocl_small.png"/>
+                <Image path="res/icon/gui/ocl_big.png"/>
+                <TagTypes>
+                    <TagType name="context" uid="87ef19a9-5f25-4ed2-b9da-b4b5a8f28fcd" label="%tagtype.context.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="body" uid="0620310c-515a-4d31-9304-88f755b0f1bc" label="%tagtype.body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RankingInterval" metaclass="Class" owner-stereotype="mref#'' {696e55f6-a990-4dfc-ac25-49e8387197a1} Stereotype" is-hidden="false" label="%stereotype.RankingInterval.label" uid="4238c8cd-47ee-4f9a-8578-e88e5471da02">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="value" uid="9b11ead5-fcca-4e42-864d-3d741961a8ff" label="%tagtype.value.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RankingMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.RankingMeasure.label" uid="79191ec1-d370-472e-b7a7-97fe6382bdd6">
+                <Icon path="res/icon/gui/rank_small.png"/>
+                <Image path="res/icon/gui/rank_big.png"/>
+            </Stereotype>
+            <Stereotype name="RankingMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.RankingMeasureRelationship.label" uid="d3a9b8f8-ed4b-458e-9f55-ef8f071a850e">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="RefinementMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.RefinementMeasureRelationship.label" uid="cbc1ce9a-6eda-41f2-90bd-8b69340d4cbc">
+                <Icon path="res/icon/gui/dependency.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="ScopeElement" metaclass="Class" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.ScopeElement.label" uid="05bd91a8-5e19-45a4-b3e4-9a575283d619">
+                <Icon path="res/icon/gui/scope_small.png"/>
+                <Image path="res/icon/gui/scope_big.png"/>
+                <TagTypes>
+                    <TagType name="class_MOF" uid="567574fc-d579-493a-8a69-9473701d665d" label="%tagtype.class_MOF.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="stereotype" uid="18d8201d-ed74-49c1-addd-397146860595" label="%tagtype.stereotype.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="break_condition_language" uid="c316b290-4444-4edd-a1ed-ee37a1e8d8c4" label="%tagtype.break_condition_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="break_condition_body" uid="57734add-5e94-424b-b505-ddffa6ff0c45" label="%tagtype.break_condition_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="recognizer_language" uid="53f3fb18-8e48-415f-bb22-526d22c6f0d9" label="%tagtype.recognizer_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="recognizer_body" uid="4cf67bcd-6cbc-4222-9288-15a458d58849" label="%tagtype.recognizer_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="ScopeLink" metaclass="Dependency" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.ScopeLink.label" uid="1ce8589d-3e79-401c-b997-96baa1462a9e">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="Break_condition_language" uid="964aa810-2f44-4481-867e-6397bf8d68be" label="%tagtype.Break_condition_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Break_condition_body" uid="1ad32239-9f5a-43c5-b5a5-6642f9eb6e90" label="%tagtype.Break_condition_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Recognizer_language" uid="2f7d8596-ea33-473b-b24b-fedc8b5ade07" label="%tagtype.Recognizer_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Recognizer_body" uid="7be29d38-e75f-4220-bfed-f371343ffb2f" label="%tagtype.Recognizer_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="TraitLink" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.TraitLink.label" uid="fe4d408e-31da-4d70-96a2-5e3ebaa0aa1f">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="UnitLink" metaclass="Dependency" owner-stereotype="" is-hidden="" label="%stereotype.null.label" uid="384827bf-56b8-434f-842b-9c0619af1408"/>
+            <Stereotype name="UnitOfMeasure" metaclass="Class" owner-stereotype="mref#'' {4236f90b-2dfc-4c4d-a86c-f4453d0626f8} Stereotype" is-hidden="false" label="%stereotype.UnitOfMeasure.label" uid="41b126e9-fa4b-47dc-9157-25a348afd8f8">
+                <Icon path="res/icon/gui/constraintblock.png"/>
+                <Image path="res/icon/gui/constraintblock48.png"/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="ac7d9149-d9ac-4f07-a102-7a8bf30e97c8" id="Collective Measures">
+            <Stereotype name="Base1MeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {469af30e-d033-4d28-86aa-b7507b07571e} Stereotype" is-hidden="false" label="%stereotype.Base1MeasureRelationship.label" uid="af4bcead-5ddd-4e23-a27b-f71014e9c4ea">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Base2MeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {469af30e-d033-4d28-86aa-b7507b07571e} Stereotype" is-hidden="false" label="%stereotype.Base2MeasureRelationship.label" uid="b5dfa59b-3ef4-4e85-b90a-1fe951f8225c">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="BaseMeasureRelationhip" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.BaseMeasureRelationhip.label" uid="469af30e-d033-4d28-86aa-b7507b07571e">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="BaseNMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {469af30e-d033-4d28-86aa-b7507b07571e} Stereotype" is-hidden="false" label="%stereotype.BaseNMeasureRelationship.label" uid="c7616abf-667c-43e1-b350-93aa43232f6f">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="BinaryMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.BinaryMeasure.label" uid="235dac45-aacc-422e-ac68-52c7eb93407f">
+                <Icon path="res/icon/gui/binary_small.png"/>
+                <Image path="res/icon/gui/binary_big.png"/>
+                <TagTypes>
+                    <TagType name="functor" uid="95655f87-71db-4839-8a67-93469053da74" label="%tagtype.functor.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="customFunctor_body" uid="d2c6adc1-b7d3-43f3-a315-b4369ec1549d" label="%tagtype.customFunctor_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="customFunctor_language" uid="9fc4acb0-7371-48b3-87c3-4df769314d0a" label="%tagtype.customFunctor_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="CollectiveMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.CollectiveMeasure.label" uid="102b8aa2-43b0-4fe8-aaf7-da6548211ea2">
+                <Icon path="res/icon/gui/collectivemeasure_small.png"/>
+                <Image path="res/icon/gui/collectivemeasure_big.png"/>
+                <TagTypes>
+                    <TagType name="Accumulator" uid="7f56a7d3-b457-4c3e-ac59-c78db2874109" label="%tagtype.Accumulator.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="customAccumulator_body" uid="cae9e73c-f409-49f8-bf87-c7f9e9ef722d" label="%tagtype.customAccumulator_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="customAccumulator_language" uid="6df5fc7e-f83b-4af3-a318-0cd7e0f63f19" label="%tagtype.customAccumulator_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="CountingMeasure" metaclass="Class" owner-stereotype="mref#'' {679de844-05cc-4fd1-adc2-f2d08baa17b8} Stereotype" is-hidden="false" label="%stereotype.CountingMeasure.label" uid="c179e873-14a0-4c21-8054-40e2436e999b">
+                <Icon path="res/icon/gui/countingmeasure_small.png"/>
+                <Image path="res/icon/gui/countingmeasure_big.png"/>
+            </Stereotype>
+            <Stereotype name="DirectMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.DirectMeasure.label" uid="679de844-05cc-4fd1-adc2-f2d08baa17b8">
+                <Icon path="res/icon/gui/directmeasure_small.png"/>
+                <Image path="res/icon/gui/directmeasure_big.png"/>
+                <TagTypes>
+                    <TagType name="Operation_language" uid="b2a874a7-cff0-458e-acd8-8574c771849a" label="%tagtype.Operation_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="Operation_body" uid="47c4a745-8999-4f76-b8a2-d64fcd8a99df" label="%tagtype.Operation_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RatioMeasure" metaclass="Class" owner-stereotype="mref#'' {235dac45-aacc-422e-ac68-52c7eb93407f} Stereotype" is-hidden="false" label="%stereotype.RatioMeasure.label" uid="0e380785-5488-4068-bcf2-7ab9e2b50f83">
+                <Icon path="res/icon/gui/ratio_small.png"/>
+                <Image path="res/icon/gui/ratio_big.png"/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="f3e95937-96cc-4a94-bc68-d649a664244c" id="Measurements">
+            <Stereotype name="Measurement" metaclass="Class" owner-stereotype="mref#'' {6a275d02-c425-4d24-a622-0b0644fdfd7b} Stereotype" is-hidden="false" label="%stereotype.Measurement.label" uid="49098706-f6cd-425b-803b-c6e57fbb478b">
+                <Icon path="res/icon/gui/measurement_small.png"/>
+                <Image path="res/icon/gui/measurement_big.png"/>
+                <TagTypes>
+                    <TagType name="breakValue" uid="ed300bda-2d54-4120-9045-c930fb92f202" label="%tagtype.breakValue.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="error" uid="a1d78bb5-54f4-43e3-98aa-7af0b963b52d" label="%tagtype.error.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="Measurand" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.Measurand.label" uid="e85f75f0-320a-496e-b59d-bb2b1cb22039">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="DimensionalMeasurement" metaclass="Class" owner-stereotype="mref#'' {49098706-f6cd-425b-803b-c6e57fbb478b} Stereotype" is-hidden="false" label="%stereotype.DimensionalMeasurement.label" uid="212f8ce2-a2b9-42ee-806f-7af63b184482">
+                <Icon path="res/icon/gui/measurement_small.png"/>
+                <Image path="res/icon/gui/measurement_big.png"/>
+                <TagTypes>
+                    <TagType name="DimensionalMeasurement_value" uid="a4881b51-f1b7-4b2d-b347-83f9217aec05" label="%tagtype.DimensionalMeasurement_value.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="MeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {7e0e48e6-508c-4f53-955b-e3358a42a960} Stereotype" is-hidden="false" label="%stereotype.MeasurementRelationship.label" uid="008e33e6-6a5d-4304-b7fc-fcc52b7efbd8">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="RankingMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.RankingMeasurement.label" uid="7b645415-ed36-49f4-ba56-d7a7a52647c8">
+                <Icon path="res/icon/gui/rank_small.png"/>
+                <Image path="res/icon/gui/rank_big.png"/>
+                <TagTypes>
+                    <TagType name="RankingMeasurement_isBaseSupplied" uid="d209b46e-9fe9-4b5a-8895-a0fbb1f6274e" label="%tagtype.RankingMeasurement_isBaseSupplied.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="RankingMeasurement_baseQuery_body" uid="bb2898fb-3907-411c-9528-272e47a39b14" label="%tagtype.RankingMeasurement_baseQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="RankingMeasurement_baseQuery_language" uid="859c2b16-53a8-4274-9470-18a276d400c8" label="%tagtype.RankingMeasurement_baseQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="GradeMeasurement" metaclass="Class" owner-stereotype="mref#'' {49098706-f6cd-425b-803b-c6e57fbb478b} Stereotype" is-hidden="false" label="%stereotype.GradeMeasurement.label" uid="e11e5d2d-3ece-46ee-91a1-9ecd05a14ffa">
+                <Icon path="res/icon/gui/grande_small.png"/>
+                <Image path="res/icon/gui/grade_big.png"/>
+                <TagTypes>
+                    <TagType name="GradeMeasurement_value" uid="1b1042ff-df17-4024-80fe-213e42507362" label="%tagtype.GradeMeasurement_value.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="GradeMeasurement_isBaseSupplied" uid="4a4318ef-e6e6-4cbd-b279-2c063583862c" label="%tagtype.GradeMeasurement_isBaseSupplied.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="GradeMeasurement_baseQuery_body" uid="bc22509f-82e2-4624-b9c8-95e8d8ba25e3" label="%tagtype.GradeMeasurement_baseQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="GradeMeasurement_baseQuery_language" uid="32211a76-30c3-4db2-b899-86f9bc5a24b4" label="%tagtype.GradeMeasurement_baseQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RankingMeasureementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.RankingMeasureementRelationship.label" uid="5b05b86e-2e32-40b8-9786-8e9d9d0be74c">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="GradeMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.GradeMeasurementRelationship.label" uid="a0153a9d-a582-402b-9842-53e48c04ec59">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="EquivalentMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.EquivalentMeasurementRelationship.label" uid="6cc60cc1-8fdc-49cd-8d80-84f1bc914245">
+                <Icon path="res/icon/gui/dependency.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="RefinementMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.RefinementMeasurementRelationship.label" uid="a43b27bd-4ddc-4969-8946-7e483d89cfd6">
+                <Icon path="res/icon/gui/dependency.png"/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="ba3747fa-bd73-42f2-9870-c8436527a551" id="Collective Measurements">
+            <Stereotype name="BaseMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.BaseMeasurementRelationship.label" uid="bd94ea9e-19c2-4b18-9ea7-fa3897d32b6f">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="BinaryMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.BinaryMeasurement.label" uid="543c4264-b951-4b63-9965-4517965b3ae7">
+                <Icon path="res/icon/gui/binary_small.png"/>
+                <Image path="res/icon/gui/binary_big.png"/>
+                <TagTypes>
+                    <TagType name="BinaryMeasurement_isBaseSupplied" uid="c8877355-af7a-4585-8f80-f23945ad2033" label="%tagtype.BinaryMeasurement_isBaseSupplied.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="BinaryMeasurement_baseQuery_language" uid="7dd4a134-586a-4482-bade-86de28d24111" label="%tagtype.BinaryMeasurement_baseQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="BinaryMeasurement_baseQuery_body" uid="fb06c3a5-0b50-4078-b1bd-a6e5197666d2" label="%tagtype.BinaryMeasurement_baseQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="Base1MeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.Base1MeasurementRelationship.label" uid="8ed24ab3-1760-4b96-9981-ac827fb40e1c">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Base2MeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.Base2MeasurementRelationship.label" uid="757a3012-0155-4dd1-a86f-5263b573cbd5">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="BaseNMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.BaseNMeasurementRelationship.label" uid="74b11486-a152-44a1-839f-afb49fea1963">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="DirectMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.DirectMeasurement.label" uid="e178e4e9-716c-4d41-9f0b-4c88ebbdc456">
+                <Icon path="res/icon/gui/directmeasure_small.png"/>
+                <Image path="res/icon/gui/directmeasure_big.png"/>
+            </Stereotype>
+            <Stereotype name="CountingMeasurement" metaclass="Class" owner-stereotype="mref#'' {e178e4e9-716c-4d41-9f0b-4c88ebbdc456} Stereotype" is-hidden="false" label="%stereotype.CountingMeasurement.label" uid="48f61a5e-579f-412c-870a-9bd495423e9b">
+                <Icon path="res/icon/gui/countingmeasure_small.png"/>
+                <Image path="res/icon/gui/countingmeasure_big.png"/>
+            </Stereotype>
+            <Stereotype name="CollectiveMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.CollectiveMeasurement.label" uid="557885bd-9d1b-4102-be76-b13b13fa51ed">
+                <Icon path="res/icon/gui/collectivemeasure_small.png"/>
+                <Image path="res/icon/gui/collectivemeasure_big.png"/>
+                <TagTypes>
+                    <TagType name="CollectiveMeasurement_Base_query_language" uid="f64d8dab-3ff5-41b0-ae6a-b4f04b849e49" label="%tagtype.CollectiveMeasurement_Base_query_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="CollectiveMeasurement_Base_query_body" uid="3fc4b605-13a7-4361-89af-b4c9275e16e7" label="%tagtype.CollectiveMeasurement_Base_query_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="CollectiveMeasurement_isBaseSupplied" uid="41cbd054-1200-4ed7-9794-2cc134af031e" label="%tagtype.CollectiveMeasurement_isBaseSupplied.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RatioMeasurement" metaclass="Class" owner-stereotype="mref#'' {543c4264-b951-4b63-9965-4517965b3ae7} Stereotype" is-hidden="false" label="%stereotype.RatioMeasurement.label" uid="34387442-de9f-4346-a82f-42f826b7bead">
+                <Icon path="res/icon/gui/ratio_small.png"/>
+                <Image path="res/icon/gui/ratio_big.png"/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="0967911a-588c-4fda-8c7f-c0d545011bdd" id="Automatic">
+            <Stereotype name="SMM_Diagram" metaclass="StaticDiagram" owner-stereotype="" is-hidden="false" label="%stereotype.SMM_Diagram.label" uid="d02ff7ab-deeb-4fe8-b17d-36f32e9d8ba5">
+                <Icon path="res/icon/gui/diagram_small.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Library_Diagram" metaclass="StaticDiagram" owner-stereotype="" is-hidden="false" label="%stereotype.Library_Diagram.label" uid="a706b8b5-3ceb-4fd5-8faa-c2c24405f428">
+                <Icon path="res/icon/gui/diagram_small.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Category_Diagram" metaclass="StaticDiagram" owner-stereotype="" is-hidden="false" label="%stereotype.Category_Diagram.label" uid="92803644-55a0-4cdb-b637-5b130021d844">
+                <Icon path="res/icon/gui/diagram_small.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Measure_Diagram" metaclass="StaticDiagram" owner-stereotype="" is-hidden="false" label="%stereotype.Measure_Diagram.label" uid="bcd873c2-87a6-4199-a970-c3d3c8ad44db">
+                <Icon path="res/icon/gui/diagram_small.png"/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="4e26db2a-0681-4f7d-b4bc-546b4bd0c152" id="Other measures">
+            <Stereotype name="NamedMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.NamedMeasure.label" uid="b209b36d-7cf0-4468-be34-d1b29deaa9a5">
+                <Icon path="res/icon/gui/named_small.png"/>
+                <Image path="res/icon/gui/named_big.png"/>
+            </Stereotype>
+            <Stereotype name="RescaledMeasure" metaclass="Class" owner-stereotype="mref#'' {5acfe476-3305-4bff-a515-55196d2402e8} Stereotype" is-hidden="false" label="%stereotype.RescaledMeasure.label" uid="c0ba9a5c-d27a-4ba5-8ddb-95d9f0682429">
+                <Icon path="res/icon/gui/rescaled_small.png"/>
+                <Image path="res/icon/gui/rescaled_big.png"/>
+                <TagTypes>
+                    <TagType name="offset" uid="87757483-35b7-45ec-9891-9c6a2ab40768" label="%tagtype.offset.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="multiplier" uid="1437cd48-fd7f-434e-be99-26207ef1d9ce" label="%tagtype.multiplier.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="operation_language" uid="e0e184f8-95c7-49f5-8659-16c3dc129b6a" label="%tagtype.operation_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="operation_body" uid="d14b6afd-fc98-47b6-80f8-03c27d7ac1b8" label="%tagtype.operation_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="RescaledMeasureRelationship" metaclass="Dependency" owner-stereotype="mref#'' {79e5dcaa-8ac0-43cb-9543-f61b0f1fcb28} Stereotype" is-hidden="false" label="%stereotype.RescaledMeasureRelationship.label" uid="e8d4c414-bc5a-46b3-aaae-f4564ee821f5">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="Rescales" metaclass="Dependency" owner-stereotype="" is-hidden="false" label="%stereotype.Rescales.label" uid="9d52d463-080d-4155-9c01-415001b6e9fa">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="743bca22-9eb7-4ce1-8cfa-0c75405ad204" id="Named and rescaled measurements">
+            <Stereotype name="RescaledMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.RescaledMeasurement.label" uid="8bd1b2b9-f0ab-482a-bd92-cabab26e7f38">
+                <Icon path="res/icon/gui/rescaled_small.png"/>
+                <Image path="res/icon/gui/rescaled_big.png"/>
+                <TagTypes>
+                    <TagType name="RescaledMeasurement_isBaseSupplied" uid="9b81da6e-c6b9-472c-9f9a-91372a998524" label="%tagtype.RescaledMeasurement_isBaseSupplied.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="RescaledMeasurement_baseQuery_body" uid="dae762a9-f251-43a9-9aae-a33fbe27fe2d" label="%tagtype.RescaledMeasurement_baseQuery_body.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="RescaledMeasurement_baseQuery_language" uid="6ae8281c-d616-4c92-8ffd-69bcbb378727" label="%tagtype.RescaledMeasurement_baseQuery_language.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <Stereotype name="NamedMeasurement" metaclass="Class" owner-stereotype="mref#'' {212f8ce2-a2b9-42ee-806f-7af63b184482} Stereotype" is-hidden="false" label="%stereotype.NamedMeasurement.label" uid="90c2ffa1-a7ab-43a3-aeea-c9e668c6d3a7">
+                <Icon path="res/icon/gui/named_small.png"/>
+                <Image path="res/icon/gui/named_big.png"/>
+            </Stereotype>
+            <Stereotype name="RescaledMeasurementRelationship" metaclass="Dependency" owner-stereotype="mref#'' {008e33e6-6a5d-4304-b7fc-fcc52b7efbd8} Stereotype" is-hidden="false" label="%stereotype.RescaledMeasurementRelationship.label" uid="dd393436-e1db-48ed-bcad-d94f8a50911a">
+                <Icon path=""/>
+                <Image path=""/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="17df69c0-ddc4-4d13-9dca-f24b4b0eee11" id="External">
+            <Stereotype name="Measurements" metaclass="Package" owner-stereotype="" is-hidden="false" label="%stereotype.Measurements.label" uid="cf2e2791-a446-4bad-9beb-db49e82f8ec4">
+                <Icon path="res/icon/gui/measurement_small.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="MeasureDefinitionContainer" metaclass="Package" owner-stereotype="" is-hidden="false" label="%stereotype.MeasureDefinitionContainer.label" uid="5bf3629e-c803-41af-b211-6edbfa1a3f1c">
+                <Icon path="res/icon/gui/folder16.png"/>
+                <Image path=""/>
+            </Stereotype>
+            <Stereotype name="metadata" metaclass="ModelElement" owner-stereotype="" is-hidden="false" label="%stereotype.metadata.label" uid="fc17e14c-cb9b-461a-bb43-284190a18d1e">
+                <Icon path=""/>
+                <Image path=""/>
+                <TagTypes>
+                    <TagType name="metadata.type" uid="8e9e17c2-30fb-4707-819c-538ca43e1d05" label="%tagtype.metadata.type.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="metadata.phase" uid="e180e616-0158-4f6a-82e7-0ad8137dc986" label="%tagtype.metadata.phase.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="matadata.developer" uid="044b570e-c950-4cbb-916a-7bddd2be6320" label="%tagtype.matadata.developer.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="metadata.tool" uid="b3c737f6-3d3f-43e4-947e-6156bb74fe9d" label="%tagtype.metadata.tool.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="metadata.designer" uid="f30b1651-9397-4785-b400-2315dc0ffd5f" label="%tagtype.metadata.designer.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+        </Profile>
+    </Profiles>
+    <Gui>
+        <Commands>
+            <Command id="Package_Measures" label="%command.Package_Measures.label" tooltip="%command.Package_Measures.tooltip" image="res/icon/gui/PackMeasure.png" modify-model="true">
+                <Scope metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="measure.smm.handlers.commands.PackageMeasure">
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Command>
+            <Command id="Generate_Measures" label="%command.Generate_Measures.label" tooltip="%command.Generate_Measures.tooltip" image="res/icon/gui/GenMeasure.png" modify-model="true">
+                <Scope metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope metaclass="Package" stereotype=""/>
+                <Handler class="measure.smm.handlers.commands.GenerateMeasure">
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Command>
+            <Command id="SMM_Diagram" label="%command.SMM_Diagram.label" tooltip="%command.SMM_Diagram.tooltip" image="res/icon/gui/diagram_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope metaclass="Package" stereotype="SMM#Observation"/>
+                <Handler class="DiagramCreate">
+                    <HParameter name="name" value="SMM Diagram"/>
+                    <HParameter name="stereotype" value="SMM#SMM_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                    <HParameter name="style" value="Measurement diagram style"/>
+                </Handler>
+            </Command>
+            <Command id="SMM_Model" label="%command.SMM_Model.label" tooltip="%command.SMM_Model.tooltip" image="res/icon/gui/model_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype=""/>
+                <Handler class="measure.smm.handlers.commands.CreateSMMHandler">
+                    <HParameter name="name" value="Element"/>
+                    <HParameter name="pattern_path" value="res/generated/patterns/SMM Model.umlt"/>
+                    <HParameter name="pattern_name" value="SMM Model"/>
+                </Handler>
+            </Command>
+            <Command id="Export_XMI" label="%command.Export_XMI.label" tooltip="%command.Export_XMI.tooltip" image="res/icon/gui/export16.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="measure.smm.handlers.commands.ExportXMI">
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Command>
+            <Command id="Import_XMI" label="%command.Import_XMI.label" tooltip="%command.Import_XMI.tooltip" image="res/icon/gui/import16.png" modify-model="true">
+                <Scope metaclass="Package" stereotype=""/>
+                <Handler class="measure.smm.handlers.commands.ImportXMI"/>
+            </Command>
+            <Command id="Icon_credits" label="%command.Icon_credits.label" tooltip="%command.Icon_credits.tooltip" image="res/icon/gui/ocl_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="RunJyScript">
+                    <HParameter name="name" value=""/>
+                    <HParameter name="JY_SCRIPT" value="res/generated/scripts/iconCredits.py"/>
+                </Handler>
+            </Command>
+            <Command id="Measure_Library" label="%command.Measure_Library.label" tooltip="%command.Measure_Library.tooltip" image="res/icon/gui/library_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="PatternApply">
+                    <HParameter name="name" value=""/>
+                    <HParameter name="pattern_path" value="res/generated/patterns/Library.umlt"/>
+                    <HParameter name="pattern_name" value="Library"/>
+                </Handler>
+            </Command>
+            <Command id="Measure_Category" label="%command.Measure_Category.label" tooltip="%command.Measure_Category.tooltip" image="res/icon/gui/category_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="PatternApply">
+                    <HParameter name="name" value="Element"/>
+                    <HParameter name="pattern_path" value="res/generated/patterns/Category.umlt"/>
+                    <HParameter name="pattern_name" value="Category"/>
+                </Handler>
+            </Command>
+            <Command id="Libeary_Diagram" label="%command.Libeary_Diagram.label" tooltip="%command.Libeary_Diagram.tooltip" image="res/icon/gui/diagram_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="DiagramCreate">
+                    <HParameter name="name" value="Library diagram"/>
+                    <HParameter name="stereotype" value="SMM#Library_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                    <HParameter name="style" value="Measurement diagram style"/>
+                </Handler>
+            </Command>
+            <Command id="Category_diagram" label="%command.Category_diagram.label" tooltip="%command.Category_diagram.tooltip" image="res/icon/gui/diagram_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="DiagramCreate">
+                    <HParameter name="name" value="Category diagram"/>
+                    <HParameter name="stereotype" value="SMM#Category_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                    <HParameter name="style" value="Measurement diagram style"/>
+                </Handler>
+            </Command>
+            <Command id="Measure_diagram" label="%command.Measure_diagram.label" tooltip="%command.Measure_diagram.tooltip" image="res/icon/gui/diagram_small.png" modify-model="true">
+                <Scope metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="DiagramCreate">
+                    <HParameter name="name" value="Measure diagram"/>
+                    <HParameter name="stereotype" value="SMM#Measure_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                    <HParameter name="style" value="Measurement diagram style"/>
+                </Handler>
+            </Command>
+            <Command id="Observations" label="%command.Observations.label" tooltip="%command.Observations.tooltip" image="res/icon/gui/observation_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Scope metaclass="Package" stereotype="SMM#Observation"/>
+                <Handler class="ElementCreate">
+                    <HParameter name="stereotype" value="SMM#Observation"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Element"/>
+                </Handler>
+            </Command>
+            <Command id="Measurements" label="%command.Measurements.label" tooltip="%command.Measurements.tooltip" image="res/icon/gui/measurement_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Scope metaclass="Package" stereotype="SMM#Measurements"/>
+                <Handler class="ElementCreate">
+                    <HParameter name="stereotype" value="SMM#Measurements"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Measurements"/>
+                </Handler>
+            </Command>
+            <Command id="Direct_Measure" label="%command.Direct_Measure.label" tooltip="%command.Direct_Measure.tooltip" image="res/icon/gui/directmeasure_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="name" value=""/>
+                    <HParameter name="pattern_path" value="res/generated/patterns/Direct measure.umlt"/>
+                    <HParameter name="pattern_name" value="Direct measure"/>
+                </Handler>
+            </Command>
+            <Command id="Collective_Measure" label="%command.Collective_Measure.label" tooltip="%command.Collective_Measure.tooltip" image="res/icon/gui/collectivemeasure_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="name" value=""/>
+                    <HParameter name="pattern_path" value="res/generated/patterns/Collective measure.umlt"/>
+                    <HParameter name="pattern_name" value="Collective measure"/>
+                </Handler>
+            </Command>
+            <Command id="Ranking_Measure" label="%command.Ranking_Measure.label" tooltip="%command.Ranking_Measure.tooltip" image="res/icon/gui/rank_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Ranking measure.umlt"/>
+                    <HParameter name="pattern_name" value="Ranking measure"/>
+                </Handler>
+            </Command>
+            <Command id="Grade_Measure" label="%command.Grade_Measure.label" tooltip="%command.Grade_Measure.tooltip" image="res/icon/gui/grande_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Grade measure.umlt"/>
+                    <HParameter name="pattern_name" value="Grade measure"/>
+                </Handler>
+            </Command>
+            <Command id="Binary_Measure" label="%command.Binary_Measure.label" tooltip="%command.Binary_Measure.tooltip" image="res/icon/gui/binary_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Binary measure.umlt"/>
+                    <HParameter name="pattern_name" value="Binary measure"/>
+                </Handler>
+            </Command>
+            <Command id="Counting_Mesure" label="%command.Counting_Mesure.label" tooltip="%command.Counting_Mesure.tooltip" image="res/icon/gui/countingmeasure_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Counting measure.umlt"/>
+                    <HParameter name="pattern_name" value="Counting measure"/>
+                </Handler>
+            </Command>
+            <Command id="Named_Measure" label="%command.Named_Measure.label" tooltip="%command.Named_Measure.tooltip" image="res/icon/gui/named_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Named measure.umlt"/>
+                    <HParameter name="pattern_name" value="Named measure"/>
+                </Handler>
+            </Command>
+            <Command id="Rescaled_Measure" label="%command.Rescaled_Measure.label" tooltip="%command.Rescaled_Measure.tooltip" image="res/icon/gui/rescaled_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Rescaled measure.umlt"/>
+                    <HParameter name="pattern_name" value="Rescaled measure"/>
+                </Handler>
+            </Command>
+            <Command id="Ration_Measure" label="%command.Ration_Measure.label" tooltip="%command.Ration_Measure.tooltip" image="res/icon/gui/ratio_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="PatternApply">
+                    <HParameter name="pattern_path" value="res/generated/patterns/Ratio measure.umlt"/>
+                    <HParameter name="pattern_name" value="Ratio measure"/>
+                </Handler>
+            </Command>
+            <Command id="Module_credits" label="%command.Module_credits.label" tooltip="%command.Module_credits.tooltip" image="res/icon/gui/ocl_small.png" modify-model="true">
+                <Scope metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="RunJyScript">
+                    <HParameter name="name" value=""/>
+                    <HParameter name="JY_SCRIPT" value="res/generated/scripts/moduleCredits.py"/>
+                </Handler>
+            </Command>
+        </Commands>
+        <Tools>
+            <Tool id="Link_measurement_relationship" label="%tool.Link_measurement_relationship.label" tooltip="%tool.Link_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#MeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_1_measure_relationship" label="%tool.Link_base_1_measure_relationship.label" tooltip="%tool.Link_base_1_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#BinaryMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#Base1MeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_measure_relationship" label="%tool.Link_measure_relationship.label" tooltip="%tool.Link_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#MeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Grade_measurement" label="%tool.Grade_measurement.label" tooltip="%tool.Grade_measurement.tooltip" image="res/icon/gui/grande_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#GradeMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Grade measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Collective_measure" label="%tool.Collective_measure.label" tooltip="%tool.Collective_measure.tooltip" image="res/icon/gui/collectivemeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#CollectiveMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Collective measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_equivalent_measure_relationship" label="%tool.Link_equivalent_measure_relationship.label" tooltip="%tool.Link_equivalent_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#EquivalentMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_2_measure_relationship" label="%tool.Link_base_2_measure_relationship.label" tooltip="%tool.Link_base_2_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#BinaryMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#Base2MeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Ranking_interval" label="%tool.Ranking_interval.label" tooltip="%tool.Ranking_interval.tooltip" image="res/icon/gui/rank_small.png">
+                <Scope-source metaclass="Class" stereotype="SMM#RankingMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#RankingInterval"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="0.0"/>
+                </Handler>
+            </Tool>
+            <Tool id="Ranking_measurement" label="%tool.Ranking_measurement.label" tooltip="%tool.Ranking_measurement.tooltip" image="res/icon/gui/rank_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#RankingMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Ranking measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Unit_of_measure" label="%tool.Unit_of_measure.label" tooltip="%tool.Unit_of_measure.tooltip" image="res/icon/gui/constraintblock.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="measure.smm.handlers.tools.CreateUnitOfMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#UnitOfMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Unit of measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_scope" label="%tool.Link_scope.label" tooltip="%tool.Link_scope.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="ModelElement" stereotype=""/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#ScopeLink"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Grade_interval" label="%tool.Grade_interval.label" tooltip="%tool.Grade_interval.tooltip" image="res/icon/gui/grande_small.png">
+                <Scope-source metaclass="Class" stereotype="SMM#GradeMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#GradeInterval"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="symbol"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_grade_measure_relationship" label="%tool.Link_grade_measure_relationship.label" tooltip="%tool.Link_grade_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#GradeMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#GradeMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Measure_library" label="%tool.Measure_library.label" tooltip="%tool.Measure_library.tooltip" image="res/icon/gui/library_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#MeasureLibrary"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Measure Library"/>
+                </Handler>
+            </Tool>
+            <Tool id="Ranking_measure" label="%tool.Ranking_measure.label" tooltip="%tool.Ranking_measure.tooltip" image="res/icon/gui/rank_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#RankingMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Ranking measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Direct measurement" label="%tool.Direct measurement.label" tooltip="%tool.Direct measurement.tooltip" image="res/icon/gui/directmeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#DirectMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="type" value="DirectMeasurement"/>
+                    <HParameter name="name" value="Direct measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Named_measure" label="%tool.Named_measure.label" tooltip="%tool.Named_measure.tooltip" image="res/icon/gui/named_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#NamedMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Named measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Rescaled_measure" label="%tool.Rescaled_measure.label" tooltip="%tool.Rescaled_measure.tooltip" image="res/icon/gui/rescaled_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#RescaledMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Rescaled measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_refinement_measure_relationship" label="%tool.Link_refinement_measure_relationship.label" tooltip="%tool.Link_refinement_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RefinementMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_trait" label="%tool.Link_trait.label" tooltip="%tool.Link_trait.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Characteristic"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#TraitLink"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Collective_measurement" label="%tool.Collective_measurement.label" tooltip="%tool.Collective_measurement.tooltip" image="res/icon/gui/collectivemeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#CollectiveMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Collective measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_rescales" label="%tool.Link_rescales.label" tooltip="%tool.Link_rescales.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#RescaledMeasure"/>
+                <Scope-target metaclass="Dependency" stereotype="SMM#BaseMeasureRelationhip"/>
+                <Handler class="measure.smm.handlers.tools.RescaleLinkHandler">
+                    <HParameter name="stereotype" value="SMM#Rescales"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_equivalent_measurement_relationship" label="%tool.Link_equivalent_measurement_relationship.label" tooltip="%tool.Link_equivalent_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#EquivalentMeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Rescaled_measurement_relationship" label="%tool.Rescaled_measurement_relationship.label" tooltip="%tool.Rescaled_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#RescaledMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RescaledMeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_1_relationship_measurement" label="%tool.Link_base_1_relationship_measurement.label" tooltip="%tool.Link_base_1_relationship_measurement.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#BinaryMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#Base1MeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Grade_measure" label="%tool.Grade_measure.label" tooltip="%tool.Grade_measure.tooltip" image="res/icon/gui/grande_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#GradeMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Grade measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Ratio_measurement" label="%tool.Ratio_measurement.label" tooltip="%tool.Ratio_measurement.tooltip" image="res/icon/gui/ratio_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#RatioMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Ratio measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_observed_measure" label="%tool.Link_observed_measure.label" tooltip="%tool.Link_observed_measure.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#ObservedMeasureLink"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Named_measurement" label="%tool.Named_measurement.label" tooltip="%tool.Named_measurement.tooltip" image="res/icon/gui/named_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#NamedMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Named measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Category_relationship" label="%tool.Category_relationship.label" tooltip="%tool.Category_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#CategoryRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Rescaled_measure_relationship" label="%tool.Rescaled_measure_relationship.label" tooltip="%tool.Rescaled_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RescaledMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Observation" label="%tool.Observation.label" tooltip="%tool.Observation.tooltip" image="res/icon/gui/observation_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#SmmModel"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#Observation"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Observation"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_ranking_measure_relationship" label="%tool.Link_ranking_measure_relationship.label" tooltip="%tool.Link_ranking_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#RankingMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RankingMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Ratio_measure" label="%tool.Ratio_measure.label" tooltip="%tool.Ratio_measure.tooltip" image="res/icon/gui/ratio_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#RatioMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Ratio measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="OCL_Constraint" label="%tool.OCL_Constraint.label" tooltip="%tool.OCL_Constraint.tooltip" image="res/icon/gui/ocl_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="measure.smm.handlers.tools.CreateOCLConstraintHandler">
+                    <HParameter name="stereotype" value="SMM#OCLOperation"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="OCL operation"/>
+                </Handler>
+            </Tool>
+            <Tool id="Counting_measure" label="%tool.Counting_measure.label" tooltip="%tool.Counting_measure.tooltip" image="res/icon/gui/countingmeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#CountingMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Counting measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Binary_measure" label="%tool.Binary_measure.label" tooltip="%tool.Binary_measure.tooltip" image="res/icon/gui/binary_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#BinaryMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Binary measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_unit" label="%tool.Link_unit.label" tooltip="%tool.Link_unit.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#UnitOfMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#UnitLink"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_refinement_measurement_relationship" label="%tool.Link_refinement_measurement_relationship.label" tooltip="%tool.Link_refinement_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RefinementMeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Binary_measurement" label="%tool.Binary_measurement.label" tooltip="%tool.Binary_measurement.tooltip" image="res/icon/gui/binary_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#BinaryMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Binary measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_observed_measurement" label="%tool.Link_observed_measurement.label" tooltip="%tool.Link_observed_measurement.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#Measurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#ObservedMeasurement"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_N_relationship_measurement" label="%tool.Link_base_N_relationship_measurement.label" tooltip="%tool.Link_base_N_relationship_measurement.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#CollectiveMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#BaseNMeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Direct_measure" label="%tool.Direct_measure.label" tooltip="%tool.Direct_measure.tooltip" image="res/icon/gui/directmeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="measure.smm.handlers.tools.CreateMeasureHandler">
+                    <HParameter name="stereotype" value="SMM#DirectMeasure"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Direct measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_mensurand" label="%tool.Link_mensurand.label" tooltip="%tool.Link_mensurand.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#Measurement"/>
+                <Scope-target metaclass="ModelElement" stereotype=""/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#Measurand"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_2_relationship_measurement" label="%tool.Link_base_2_relationship_measurement.label" tooltip="%tool.Link_base_2_relationship_measurement.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#BinaryMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#Base2MeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Dimensional_measurement" label="%tool.Dimensional_measurement.label" tooltip="%tool.Dimensional_measurement.tooltip" image="res/icon/gui/measurement_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#DimensionalMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Dimansional Measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_ranking_measurement_relationship" label="%tool.Link_ranking_measurement_relationship.label" tooltip="%tool.Link_ranking_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#RankingMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RankingMeasureementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Scope_element" label="%tool.Scope_element.label" tooltip="%tool.Scope_element.tooltip" image="res/icon/gui/scope_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="measure.smm.handlers.tools.CreateScopeHandler">
+                    <HParameter name="stereotype" value="SMM#ScopeElement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Scope"/>
+                </Handler>
+            </Tool>
+            <Tool id="Measure_category" label="%tool.Measure_category.label" tooltip="%tool.Measure_category.tooltip" image="res/icon/gui/category_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureCategory"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#MeasureCategory"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Measure category"/>
+                </Handler>
+            </Tool>
+            <Tool id="Counting_measurement" label="%tool.Counting_measurement.label" tooltip="%tool.Counting_measurement.tooltip" image="res/icon/gui/countingmeasure_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#CountingMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Counting measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_requested_measure" label="%tool.Link_requested_measure.label" tooltip="%tool.Link_requested_measure.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Package" stereotype="SMM#Observation"/>
+                <Scope-target metaclass="ModelElement" stereotype="SMM#AbstractMeasureElement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#RequestedMeasureLink"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_base_N_measure_relationship" label="%tool.Link_base_N_measure_relationship.label" tooltip="%tool.Link_base_N_measure_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#CollectiveMeasure"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasure"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#BaseNMeasureRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Observed_measure" label="%tool.Observed_measure.label" tooltip="%tool.Observed_measure.tooltip" image="res/icon/gui/observed_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#Observation"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#ObservedMeasure"/>
+                    <HParameter name="metaclass" value="Package"/>
+                    <HParameter name="name" value="Observed measure"/>
+                </Handler>
+            </Tool>
+            <Tool id="Link_grade_measurement_relationship" label="%tool.Link_grade_measurement_relationship.label" tooltip="%tool.Link_grade_measurement_relationship.tooltip" image="res/icon/gui/dependency.png">
+                <Scope-source metaclass="Class" stereotype="SMM#GradeMeasurement"/>
+                <Scope-target metaclass="Class" stereotype="SMM#DimensionalMeasurement"/>
+                <Handler class="Link">
+                    <HParameter name="stereotype" value="SMM#GradeMeasurementRelationship"/>
+                    <HParameter name="metaclass" value="Dependency"/>
+                    <HParameter name="name" value=""/>
+                </Handler>
+            </Tool>
+            <Tool id="Rescaled_measurement" label="%tool.Rescaled_measurement.label" tooltip="%tool.Rescaled_measurement.tooltip" image="res/icon/gui/rescaled_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#ObservedMeasure"/>
+                <Handler class="Box">
+                    <HParameter name="stereotype" value="SMM#RescaledMeasurement"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Rescaled measurement"/>
+                </Handler>
+            </Tool>
+            <Tool id="Characteristic" label="%tool.Characteristic.label" tooltip="%tool.Characteristic.tooltip" image="res/icon/gui/characteristic_small.png">
+                <Scope-source metaclass="Package" stereotype="SMM#MeasureLibrary"/>
+                <Scope-source metaclass="Class" stereotype="SMM#Measure"/>
+                <Handler class="measure.smm.handlers.tools.CreateCharacteristicHandler">
+                    <HParameter name="stereotype" value="SMM#Characteristic"/>
+                    <HParameter name="metaclass" value="Class"/>
+                    <HParameter name="name" value="Characteristic"/>
+                </Handler>
+            </Tool>
+        </Tools>
+        <ContextualMenu>
+            <CommandRef refid="SMM_Model" group="" group-image=""/>
+            <CommandRef refid="Measure_Category" group="" group-image=""/>
+            <CommandRef refid="Measure_Library" group="" group-image=""/>
+            <CommandRef refid="Observations" group="" group-image=""/>
+            <CommandRef refid="Measurements" group="" group-image=""/>
+            <CommandRef refid="Binary_Measure" group="" group-image=""/>
+            <CommandRef refid="Collective_Measure" group="" group-image=""/>
+            <CommandRef refid="Counting_Mesure" group="" group-image=""/>
+            <CommandRef refid="Direct_Measure" group="" group-image=""/>
+            <CommandRef refid="Grade_Measure" group="" group-image=""/>
+            <CommandRef refid="Named_Measure" group="" group-image=""/>
+            <CommandRef refid="Ranking_Measure" group="" group-image=""/>
+            <CommandRef refid="Ration_Measure" group="" group-image=""/>
+            <CommandRef refid="Rescaled_Measure" group="" group-image=""/>
+            <CommandRef refid="SMM_Diagram" group="" group-image=""/>
+            <CommandRef refid="Libeary_Diagram" group="" group-image=""/>
+            <CommandRef refid="Measure_diagram" group="" group-image=""/>
+            <CommandRef refid="Category_diagram" group="" group-image=""/>
+            <CommandRef refid="Export_XMI" group="%group.Import_/_Export.label" group-image=""/>
+            <CommandRef refid="Import_XMI" group="%group.Import_/_Export.label" group-image=""/>
+            <CommandRef refid="Icon_credits" group="%group.credits.label" group-image=""/>
+            <CommandRef refid="Module_credits" group="%group.credits.label" group-image=""/>
+            <CommandRef refid="Generate_Measures" group="" group-image=""/>
+            <CommandRef refid="Package_Measures" group="" group-image=""/>
+        </ContextualMenu>
+        <Diagrams>
+            <DiagramType base-diagram="StaticDiagram" stereotype="SMM#SMM_Diagram">
+                <Palette keepBasePalette="true">
+                    <ToolRef refid="CREATE_PACKAGE" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_CLASS" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_INSTANCE" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_ATTRIBUTE" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_ASSOCIATION" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_COMPOSITION" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="CREATE_SMARTGENERALIZATION" group="%group.Metamodelling.label"/>
+                    <ToolRef refid="Measure_category" group="%group.Core.label"/>
+                    <ToolRef refid="Measure_library" group="%group.Core.label"/>
+                    <ToolRef refid="Category_relationship" group="%group.Core.label"/>
+                    <ToolRef refid="Characteristic" group="%group.Measure.label"/>
+                    <ToolRef refid="CREATE_GENERALIZATION" group="%group.Measure.label"/>
+                    <ToolRef refid="Unit_of_measure" group="%group.Measure.label"/>
+                    <ToolRef refid="Scope_element" group="%group.Measure.label"/>
+                    <ToolRef refid="OCL_Constraint" group="%group.Measure.label"/>
+                    <ToolRef refid="Grade_measure" group="%group.Measure.label"/>
+                    <ToolRef refid="Grade_interval" group="%group.Measure.label"/>
+                    <ToolRef refid="Ranking_measure" group="%group.Measure.label"/>
+                    <ToolRef refid="Ranking_interval" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_unit" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_scope" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_trait" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_equivalent_measure_relationship" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_refinement_measure_relationship" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_grade_measure_relationship" group="%group.Measure.label"/>
+                    <ToolRef refid="Link_ranking_measure_relationship" group="%group.Measure.label"/>
+                    <ToolRef refid="Counting_measure" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Direct_measure" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Collective_measure" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Binary_measure" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Ratio_measure" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Link_base_1_measure_relationship" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Link_base_2_measure_relationship" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Link_base_N_measure_relationship" group="%group.Collective_measures.label"/>
+                    <ToolRef refid="Named_measure" group="%group.Other_measures.label"/>
+                    <ToolRef refid="Rescaled_measure" group="%group.Other_measures.label"/>
+                    <ToolRef refid="Rescaled_measure_relationship" group="%group.Other_measures.label"/>
+                    <ToolRef refid="Link_rescales" group="%group.Other_measures.label"/>
+                    <ToolRef refid="Observation" group="%group.Observation.label"/>
+                    <ToolRef refid="Observed_measure" group="%group.Observation.label"/>
+                    <ToolRef refid="Link_observed_measure" group="%group.Observation.label"/>
+                    <ToolRef refid="Link_requested_measure" group="%group.Observation.label"/>
+                    <ToolRef refid="Grade_measurement" group="%group.Measurement.label"/>
+                    <ToolRef refid="Ranking_measurement" group="%group.Measurement.label"/>
+                    <ToolRef refid="Link_mensurand" group="%group.Measurement.label"/>
+                    <ToolRef refid="Link_grade_measurement_relationship" group="%group.Measurement.label"/>
+                    <ToolRef refid="Link_ranking_measurement_relationship" group="%group.Measurement.label"/>
+                    <ToolRef refid="Link_equivalent_measurement_relationship" group="%group.Measurement.label"/>
+                    <ToolRef refid="Link_refinement_measurement_relationship" group="%group.Measurement.label"/>
+                    <ToolRef refid="Binary_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Counting_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Direct measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Ratio_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Collective_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Link_base_1_relationship_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Link_base_2_relationship_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Link_base_N_relationship_measurement" group="%group.Collective_measurements.label"/>
+                    <ToolRef refid="Named_measurement" group="%group.Named_and_rescaled_measurements.label"/>
+                    <ToolRef refid="Rescaled_measurement" group="%group.Named_and_rescaled_measurements.label"/>
+                    <ToolRef refid="Rescaled_measurement_relationship" group="%group.Named_and_rescaled_measurements.label"/>
+                </Palette>
+                <Wizard label="%wizard.SMM_Diagram.label" icon="res/icon/gui/diagram_small.png" information="%wizard.SMM_Diagram.info" details="%wizard.SMM_Diagram.detail" preview-image="">
+                    <Scope metaclass="Package" stereotype=""/>
+                    <Handler class="GenericWizardContributor">
+                        <HParameter name="style" value="Measurement diagram style"/>
+                    </Handler>
+                </Wizard>
+                <Handler class="StandardCustomizer">
+                    <HParameter name="stereotype" value="SMM#SMM_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                </Handler>
+            </DiagramType>
+            <DiagramType base-diagram="StaticDiagram" stereotype="SMM#Library_Diagram">
+                <Palette keepBasePalette="false">
+                    <ToolRef refid="Measure_category" group="%group.Categories.label"/>
+                    <ToolRef refid="Category_relationship" group="%group.Categories.label"/>
+                    <ToolRef refid="CREATE_NOTE" group="%group.Categories.label"/>
+                </Palette>
+                <Handler class="StandardCustomizer">
+                    <HParameter name="stereotype" value="SMM#Library_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                </Handler>
+            </DiagramType>
+            <DiagramType base-diagram="StaticDiagram" stereotype="SMM#Category_Diagram">
+                <Palette keepBasePalette="false">
+                    <ToolRef refid="Direct_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Collective_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Ranking_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Grade_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Binary_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Counting_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Named_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Rescaled_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Ratio_measure" group="%group.Measures.label"/>
+                    <ToolRef refid="Link_measure_relationship" group="%group.Measure_Hierarchy.label"/>
+                    <ToolRef refid="Link_equivalent_measure_relationship" group="%group.Measure_Hierarchy.label"/>
+                    <ToolRef refid="Link_refinement_measure_relationship" group="%group.Measure_Hierarchy.label"/>
+                    <ToolRef refid="CREATE_GENERALIZATION" group="%group.Measure_Hierarchy.label"/>
+                    <ToolRef refid="Link_base_1_measure_relationship" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="Link_base_2_measure_relationship" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="Link_base_N_measure_relationship" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="Link_grade_measure_relationship" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="Link_ranking_measure_relationship" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="Link_rescales" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="CREATE_NOTE" group="%group.Measure_Relations.label"/>
+                    <ToolRef refid="CREATE_EXTERNDOCUMENT" group="%group.Measure_Relations.label"/>
+                </Palette>
+                <Handler class="StandardCustomizer">
+                    <HParameter name="stereotype" value="SMM#Category_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                </Handler>
+            </DiagramType>
+            <DiagramType base-diagram="StaticDiagram" stereotype="SMM#Measure_Diagram">
+                <Palette keepBasePalette="false">
+                    <ToolRef refid="Characteristic" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Link_trait" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Unit_of_measure" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Link_unit" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Scope_element" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Link_scope" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="OCL_Constraint" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Link_rescales" group="%group.Measure_Definition.label"/>
+                    <ToolRef refid="Grade_interval" group="%group.Intervales_&amp;_Ranking.label"/>
+                    <ToolRef refid="Ranking_interval" group="%group.Intervales_&amp;_Ranking.label"/>
+                    <ToolRef refid="Link_base_1_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="Link_base_2_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="Link_base_N_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="Rescaled_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="Link_grade_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="Link_ranking_measure_relationship" group="%group.Inter_Measure_Relations.label"/>
+                    <ToolRef refid="CREATE_NOTE" group="%group.Common.label"/>
+                    <ToolRef refid="CREATE_EXTERNDOCUMENT" group="%group.Common.label"/>
+                </Palette>
+                <Handler class="StandardCustomizer">
+                    <HParameter name="stereotype" value="SMM#Measure_Diagram"/>
+                    <HParameter name="metaclass" value="StaticDiagram"/>
+                </Handler>
+            </DiagramType>
+        </Diagrams>
+    </Gui>
+    <Dependencies>
+        <Required name="JavaDesigner" version="3.4.02"/>
+    </Dependencies>
+    <Resources>
+        <Styles>
+            <Style id="Measurement diagram style" path="res/generated/styles/Measurement diagram style.style"/>
+        </Styles>
+        <Macros>
+            <Macro id="iconCredits" path="res/generated/scripts/iconCredits.py" published="false"/>
+            <Macro id="moduleCredits" path="res/generated/scripts/moduleCredits.py" published="false"/>
+        </Macros>
+    </Resources>
+</Module>

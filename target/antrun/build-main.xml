@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <move file="C:\Users\aabherve\modelio\workspace\SMM Designer Developement\SMM/target/SMM_0.4.05.zip" tofile="C:\Users\aabherve\modelio\workspace\SMM Designer Developement\SMM/target/SMM_0.4.05.jmdac"/>
+</target>
+</project>
