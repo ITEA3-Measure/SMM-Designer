@@ -5,7 +5,7 @@
   <!-- definition -->
   <groupId>measure</groupId>
   <artifactId>smm</artifactId>
-  <version>0.4.05</version>
+  <version>0.4.06</version>
   <name>SMM</name>
   <repositories>
       <repository>
@@ -37,13 +37,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.emf</groupId>
-            <artifactId>ecore</artifactId>
-            <version>2.3.2</version>
-            <type>jar</type>
-        </dependency>
-
-        <dependency>
             <groupId>org.modelio.module</groupId>
             <artifactId>javadesigner</artifactId>
             <version>3.4.02</version>
@@ -58,19 +51,6 @@
             <type>jar</type>
         </dependency>
 
-        <dependency>
-            <groupId>measure.eu</groupId>
-            <artifactId>smm.emf</artifactId>
-            <version>0.2.04</version>
-            <type>jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>org.eclipse.emf</groupId>
-            <artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-            <version>2.11.1-v20150805-0538</version>
-            <type>jar</type>
-        </dependency>
 
     </dependencies>
 

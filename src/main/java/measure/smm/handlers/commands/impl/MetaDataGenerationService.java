@@ -217,7 +217,7 @@ public class MetaDataGenerationService {
 				return FieldType.u_text;
 			} else if ("date".equals(mftype)) {
 				return FieldType.u_date;
-			} else if ("bouble".equals(mftype)) {
+			} else if ("double".equals(mftype)) {
 				return FieldType.u_double;
 			} else if ("float".equals(mftype)) {
 				return FieldType.u_float;

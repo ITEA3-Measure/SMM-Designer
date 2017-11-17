@@ -9,9 +9,11 @@
         <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
         <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
         <PathEntry path="lib/ecore-2.3.2.jar"/>
-        <PathEntry path="lib/SMMMeasureApi-0.6.00.jar"/>
         <PathEntry path="lib/smm.emf-0.2.04.jar"/>
         <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/org.eclipse.emf.ecore.xmi-2.11.1-v20150805-0538.jar"/>
+        <PathEntry path="lib/SMMMeasureApi-0.6.00.jar"/>
     </ClassPath>
     <Profiles>
         <Profile uid="a29ffa5a-275c-4051-9f6a-a05f9e9a2415" id="Core">
